@@ -1,4 +1,5 @@
 import pandas as pd
 df=pd.read_csv('songs_normalize.csv')
 df['popularity']
-df['popularity'].hist()
+popular = df['popularity'].hist()
+st.plot(popular)
